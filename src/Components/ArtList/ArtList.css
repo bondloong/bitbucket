@@ -1,0 +1,74 @@
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 100%;
+}
+
+.wrapper .saled {
+  opacity: 0.5 !important;
+}
+
+.wrapper .item {
+  min-width: 280px;
+  max-height: 328px;
+  border: 1px solid #E1E1E1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 39px 0;
+}
+
+.wrapper .item .img-block {
+  height: 300px;
+  overflow: hidden;
+}
+
+.wrapper .item .img-block .img-responsive {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper .item .discription-art {
+  padding: 20px 23px 24px 23px;
+}
+
+.wrapper .item .discription-art .buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 22px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+}
+
+.wrapper .item .discription-art .buy .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .item .discription-art .buy .prices .sale {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #A0A0A0;
+}
+/*# sourceMappingURL=ArtList.css.map */

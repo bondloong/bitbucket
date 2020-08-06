@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@200;400;700&display=swap');
+body,
+html,
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Merriweather', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #343030;
+    background-color: #F6F3F3;
+    .page {
+        margin: 0 auto;
+        min-height: 100%;
+    }
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+a {
+    color: #343030;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration: none;
+    &:hover {
+        color: #776763;
+    }
+    &:active {
+        color: #403432;
+    }
+    &:visited {
+        color: #403432;
+    }
+}
+
+%lh-m {
+    line-height: 150%;
+    margin: 0px;
+}
+
+h1 {
+    @extend %lh-m;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    @extend %lh-m;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+h3 {
+    @extend %lh-m;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h4 {
+    @extend %lh-m;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h5 {
+    @extend %lh-m;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h6 {
+    @extend %lh-m;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.button {
+    @extend %lh-m;
+    color: white;
+    background-color: #403432;
+    width: 122px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    outline: none;
+    font-family: Merriweather;
+    &:hover {
+        background-color: #776763;
+        border: 0px;
+    }
+    &:active {
+        border: 0px;
+    }
+    &:disabled {
+        background-color: #C1B4B1;
+        border: 0px;
+    }
+    &:focus {
+        background-color: #403432;
+        border: 0px !important;
+    }
+}
+
+.header {
+    border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 45px;
+}
+
+.bc {
+    a {
+        color: #555555;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 24px 0px;
+    max-width: 615px;
+    width: 100%;
+    nav {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-flow: row wrap;
+        height: 48px;
+        .nav-item {
+            margin-top: 12px;
+        }
+    }
+}
+
+footer {
+    background-color: #ECEAEA;
+    margin-top: 45px;
+}
+
+.container {
+    max-width: 1216px;
+    min-width: 400px;
+    padding-left: 16px;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 40px;
+        cursor: pointer;
+    }
+}
+
+.contacts {
+    display: flex;
+    width: 100%;
+    max-width: 449px;
+    justify-content: space-between;
+}
+
+.phone,
+.mail {
+    align-items: center;
+    display: flex;
+    a {
+        margin-left: 10px;
+        color: #555555;
+        &:hover {
+            color: #776763;
+        }
+    }
+}
+
+.search {
+    display: flex;
+    input {
+        outline: none;
+        background-color: #F6F3F3;
+        border: 1px solid #E1E1E1;
+        font-family: 'Merriweather', serif;
+        font-size: 14px;
+        line-height: 150%;
+        height: 46px;
+        padding: 0px 16px;
+        width: 260px;
+        &::placeholder {
+            color: #9F9F9F;
+        }
+        &:focus {
+            border: 1px solid #E1E1E1;
+            border-radius: 0px;
+            background-color: #ffffff;
+        }
+    }
+}

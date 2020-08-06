@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    width: 100%;
+    .saled {
+        opacity: 0.5 !important;
+    }
+    .item {
+        min-width: 280px;
+        max-height: 328px;
+        border: 1px solid #E1E1E1;
+        box-sizing: border-box;
+        margin: 39px 0;
+        .img-block {
+            height: 300px;
+            overflow: hidden;
+            .img-responsive {
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .discription-art {
+            padding: 20px 23px 24px 23px;
+            .buy {
+                display: flex;
+                margin-top: 22px;
+                justify-content: space-between;
+                align-items: center;
+                height: 48px;
+                .prices {
+                    display: flex;
+                    flex-direction: column;
+                    .sale {
+                        align-items: center;
+                        text-decoration-line: line-through;
+                        color: #A0A0A0;
+                    }
+                }
+            }
+        }
+    }
+}

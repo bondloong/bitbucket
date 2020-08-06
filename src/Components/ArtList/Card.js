@@ -28,7 +28,7 @@ function Card(props) {
 
     return (
         <div  className={!props.art.auc? 'item saled' : 'item'}> 
-        <div onClick={() => props.selectArt(props.art)}  style={{background: 'url('+props.art.image+') center', backgroundSize: 'cover', height: 157,  width: '100%'}}></div>
+        <div onClick={() => props.selectArt(props.art)}  style={{background: 'url('+props.art.image+') center', backgroundSize: 'cover', height: 157,  width: '100%', cursor: 'pointer'}}></div>
         <div className='discription-art'>
             <h2>{props.art.name}</h2>
             <h2>{props.art.autor}</h2>
